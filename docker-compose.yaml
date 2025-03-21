@@ -152,7 +152,6 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-      - C:/Users/bathula.sarath/OneDrive - Entain Group/Documents/workspace_de/elt_pipeline_demo/dbt_snowflake_demo:/opt/airflow/dbt_snowflake_demo  
 
   airflow-worker:
     <<: *airflow-common
@@ -180,7 +179,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-      - C:/Users/bathula.sarath/OneDrive - Entain Group/Documents/workspace_de/elt_pipeline_demo/dbt_snowflake_demo:/opt/airflow/dbt_snowflake_demo  
+ 
 
   airflow-triggerer:
     <<: *airflow-common
